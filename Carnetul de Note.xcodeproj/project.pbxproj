@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26B03B1475D527087C9D1105 /* Pods_Carnetul_de_NoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F6178F59AE8C6CEE8314DD /* Pods_Carnetul_de_NoteTests.framework */; };
+		6F54FC6534F45B14143AADC6 /* Pods_Carnetul_de_NoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */; };
+		725457E21C67B0AF00BC10A2 /* AbsenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */; };
 		72A858851C67A81400FD8810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858841C67A81400FD8810 /* AppDelegate.swift */; };
 		72A858871C67A81400FD8810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858861C67A81400FD8810 /* ViewController.swift */; };
 		72A8588A1C67A81400FD8810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858881C67A81400FD8810 /* Main.storyboard */; };
-		72A8588D1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72A8588B1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodeld */; };
 		72A8588F1C67A81400FD8810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A8588E1C67A81400FD8810 /* Assets.xcassets */; };
 		72A858921C67A81400FD8810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858901C67A81400FD8810 /* LaunchScreen.storyboard */; };
 		72A8589D1C67A81400FD8810 /* Carnetul_de_NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A8589C1C67A81400FD8810 /* Carnetul_de_NoteTests.swift */; };
 		72A858A81C67A81400FD8810 /* Carnetul_de_NoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */; };
+		72B3E7041C67B38C001977EB /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7031C67B38C001977EB /* Absence.swift */; };
+		72B3E7061C67B74B001977EB /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7051C67B74B001977EB /* Grade.swift */; };
+		72B3E7081C67B7BA001977EB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7071C67B7BA001977EB /* Subject.swift */; };
+		E6A8B67E5AC5F532192B27A9 /* Pods_Carnetul_de_Note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35F6178F59AE8C6CEE8314DD /* Pods_Carnetul_de_NoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_NoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C1E91619CC1B1ECE8B9C74 /* Pods-Carnetul de Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de Note/Pods-Carnetul de Note.debug.xcconfig"; sourceTree = "<group>"; };
+		65064385ACE8516FCE698DAB /* Pods-Carnetul de Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de Note/Pods-Carnetul de Note.release.xcconfig"; sourceTree = "<group>"; };
+		66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_Note.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69172C60BC7594E2FF0FE230 /* Pods-Carnetul de NoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsenceTests.swift; sourceTree = "<group>"; };
 		72A858811C67A81400FD8810 /* Carnetul de Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carnetul de Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A858841C67A81400FD8810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A858861C67A81400FD8810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72A858891C67A81400FD8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72A8588C1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Carnetul_de_Note.xcdatamodel; sourceTree = "<group>"; };
 		72A8588E1C67A81400FD8810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A858911C67A81400FD8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A858931C67A81400FD8810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		72A858A31C67A81400FD8810 /* Carnetul de NoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carnetul de NoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carnetul_de_NoteUITests.swift; sourceTree = "<group>"; };
 		72A858A91C67A81400FD8810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B3E7031C67B38C001977EB /* Absence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Absence.swift; path = "Carnetul de Note/Model/Absence.swift"; sourceTree = "<group>"; };
+		72B3E7051C67B74B001977EB /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grade.swift; path = "Carnetul de Note/Model/Grade.swift"; sourceTree = "<group>"; };
+		72B3E7071C67B7BA001977EB /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "Carnetul de Note/Model/Subject.swift"; sourceTree = "<group>"; };
+		96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_NoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteUITests/Pods-Carnetul de NoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA12C217F3C795F6524D3D07 /* Pods-Carnetul de NoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteUITests/Pods-Carnetul de NoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A8B67E5AC5F532192B27A9 /* Pods_Carnetul_de_Note.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B03B1475D527087C9D1105 /* Pods_Carnetul_de_NoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F54FC6534F45B14143AADC6 /* Pods_Carnetul_de_NoteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71BA7C5DA5E650B770D2EF2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42C1E91619CC1B1ECE8B9C74 /* Pods-Carnetul de Note.debug.xcconfig */,
+				65064385ACE8516FCE698DAB /* Pods-Carnetul de Note.release.xcconfig */,
+				69172C60BC7594E2FF0FE230 /* Pods-Carnetul de NoteTests.debug.xcconfig */,
+				A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */,
+				FA12C217F3C795F6524D3D07 /* Pods-Carnetul de NoteUITests.debug.xcconfig */,
+				C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		721D9D791C67AA9800ADF785 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72B3E7031C67B38C001977EB /* Absence.swift */,
+				72B3E7051C67B74B001977EB /* Grade.swift */,
+				72B3E7071C67B7BA001977EB /* Subject.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		72A858781C67A81400FD8810 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +128,8 @@
 				72A8589B1C67A81400FD8810 /* Carnetul de NoteTests */,
 				72A858A61C67A81400FD8810 /* Carnetul de NoteUITests */,
 				72A858821C67A81400FD8810 /* Products */,
+				71BA7C5DA5E650B770D2EF2F /* Pods */,
+				AE7351E588BC54A3B7E36132 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +146,13 @@
 		72A858831C67A81400FD8810 /* Carnetul de Note */ = {
 			isa = PBXGroup;
 			children = (
+				721D9D791C67AA9800ADF785 /* Model */,
 				72A858841C67A81400FD8810 /* AppDelegate.swift */,
 				72A858861C67A81400FD8810 /* ViewController.swift */,
 				72A858881C67A81400FD8810 /* Main.storyboard */,
 				72A8588E1C67A81400FD8810 /* Assets.xcassets */,
 				72A858901C67A81400FD8810 /* LaunchScreen.storyboard */,
 				72A858931C67A81400FD8810 /* Info.plist */,
-				72A8588B1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodeld */,
 			);
 			path = "Carnetul de Note";
 			sourceTree = "<group>";
@@ -115,6 +162,7 @@
 			children = (
 				72A8589C1C67A81400FD8810 /* Carnetul_de_NoteTests.swift */,
 				72A8589E1C67A81400FD8810 /* Info.plist */,
+				725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */,
 			);
 			path = "Carnetul de NoteTests";
 			sourceTree = "<group>";
@@ -128,6 +176,16 @@
 			path = "Carnetul de NoteUITests";
 			sourceTree = "<group>";
 		};
+		AE7351E588BC54A3B7E36132 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */,
+				35F6178F59AE8C6CEE8314DD /* Pods_Carnetul_de_NoteTests.framework */,
+				96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A858AC1C67A81400FD8810 /* Build configuration list for PBXNativeTarget "Carnetul de Note" */;
 			buildPhases = (
+				02C04AB0C4FF08ECF200D0E5 /* Check Pods Manifest.lock */,
 				72A8587D1C67A81400FD8810 /* Sources */,
 				72A8587E1C67A81400FD8810 /* Frameworks */,
 				72A8587F1C67A81400FD8810 /* Resources */,
+				2C4FB1466372B59CC53BA1A0 /* Embed Pods Frameworks */,
+				B36B8FD41785272026BB289D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A858AF1C67A81400FD8810 /* Build configuration list for PBXNativeTarget "Carnetul de NoteTests" */;
 			buildPhases = (
+				B6861ED024F61C5BE3906B80 /* Check Pods Manifest.lock */,
 				72A858941C67A81400FD8810 /* Sources */,
 				72A858951C67A81400FD8810 /* Frameworks */,
 				72A858961C67A81400FD8810 /* Resources */,
+				78DD2BBE364DC7324A0F0F60 /* Embed Pods Frameworks */,
+				EFEBD765E4A9EADD01866307 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A858B21C67A81400FD8810 /* Build configuration list for PBXNativeTarget "Carnetul de NoteUITests" */;
 			buildPhases = (
+				001A55315CB048EB5347A021 /* Check Pods Manifest.lock */,
 				72A8589F1C67A81400FD8810 /* Sources */,
 				72A858A01C67A81400FD8810 /* Frameworks */,
 				72A858A11C67A81400FD8810 /* Resources */,
+				F16825B18A09FF6DC442BD1A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,7 +274,7 @@
 				};
 			};
 			buildConfigurationList = 72A8587C1C67A81400FD8810 /* Build configuration list for PBXProject "Carnetul de Note" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -254,13 +320,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		001A55315CB048EB5347A021 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		02C04AB0C4FF08ECF200D0E5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C4FB1466372B59CC53BA1A0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carnetul de Note/Pods-Carnetul de Note-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78DD2BBE364DC7324A0F0F60 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36B8FD41785272026BB289D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carnetul de Note/Pods-Carnetul de Note-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6861ED024F61C5BE3906B80 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEBD765E4A9EADD01866307 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F16825B18A09FF6DC442BD1A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carnetul de NoteUITests/Pods-Carnetul de NoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72A8587D1C67A81400FD8810 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B3E7041C67B38C001977EB /* Absence.swift in Sources */,
+				72B3E7081C67B7BA001977EB /* Subject.swift in Sources */,
+				72B3E7061C67B74B001977EB /* Grade.swift in Sources */,
 				72A858871C67A81400FD8810 /* ViewController.swift in Sources */,
-				72A8588D1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodeld in Sources */,
 				72A858851C67A81400FD8810 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A8589D1C67A81400FD8810 /* Carnetul_de_NoteTests.swift in Sources */,
+				725457E21C67B0AF00BC10A2 /* AbsenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -399,28 +591,33 @@
 		};
 		72A858AD1C67A81400FD8810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C1E91619CC1B1ECE8B9C74 /* Pods-Carnetul de Note.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Carnetul de Note/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-Note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		72A858AE1C67A81400FD8810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65064385ACE8516FCE698DAB /* Pods-Carnetul de Note.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Carnetul de Note/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-Note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		72A858B01C67A81400FD8810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69172C60BC7594E2FF0FE230 /* Pods-Carnetul de NoteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Carnetul de NoteTests/Info.plist";
@@ -433,6 +630,7 @@
 		};
 		72A858B11C67A81400FD8810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Carnetul de NoteTests/Info.plist";
@@ -445,6 +643,7 @@
 		};
 		72A858B31C67A81400FD8810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA12C217F3C795F6524D3D07 /* Pods-Carnetul de NoteUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Carnetul de NoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +656,7 @@
 		};
 		72A858B41C67A81400FD8810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Carnetul de NoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +686,7 @@
 				72A858AE1C67A81400FD8810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72A858AF1C67A81400FD8810 /* Build configuration list for PBXNativeTarget "Carnetul de NoteTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +695,7 @@
 				72A858B11C67A81400FD8810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72A858B21C67A81400FD8810 /* Build configuration list for PBXNativeTarget "Carnetul de NoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,21 +704,9 @@
 				72A858B41C67A81400FD8810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		72A8588B1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				72A8588C1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodel */,
-			);
-			currentVersion = 72A8588C1C67A81400FD8810 /* Carnetul_de_Note.xcdatamodel */;
-			path = Carnetul_de_Note.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 72A858791C67A81400FD8810 /* Project object */;
 }
