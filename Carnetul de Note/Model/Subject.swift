@@ -11,6 +11,19 @@ import RealmSwift
 
 class Subject: Object {
     dynamic var name = ""
+    dynamic let teza = -1
     let grades = List<Grade>()
-    let teza = 10
+    
+    static func createSubjects(names: Array<String>) {
+        
+        let realm = try! Realm()
+        
+        try! realm.write {
+            for name in names {
+                let subject = Subject()
+                subject.name = name
+                realm.add(subject)
+            }
+        }
+    }
 }

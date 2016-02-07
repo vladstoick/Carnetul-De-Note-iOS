@@ -9,27 +9,13 @@
 import UIKit
 
 class SetupViewController: UIViewController, UITableViewDelegate {
-    var selectedMateriiRows = Array<NSIndexPath>()
-    let defaultMaterii = ["Română",
-        "Franceză",
-        "Engleză",
-        "Germană",
-        "Matematică",
-        "Fizică",
-        "Biologie",
-        "Chimie",
-        "Informatică",
-        "TIC",
-        "Istorie",
-        "Geografie",
-        "Logică",
-        "Psihologie",
-        "Filozofie",
-        "Muzică",
-        "Desen",
-        "Sport",
-        "Religie",
-        "Economie",
+    var selectedSubjectRows = Array<NSIndexPath>()
+    let defaultSubjects = [
+        "Română", "Franceză", "Engleză", "Germană",
+        "Matematică", "Fizică", "Biologie", "Chimie",
+        "Informatică", "TIC", "Istorie", "Geografie",
+        "Logică", "Psihologie", "Filozofie", "Muzică",
+        "Desen", "Sport", "Religie","Economie",
         "Educație Antreprenorială"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,14 +39,14 @@ class SetupViewController: UIViewController, UITableViewDelegate {
     }
     */
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return defaultMaterii.count;
+        return defaultSubjects.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
         let cell = tableView.dequeueReusableCellWithIdentifier("setupCell", forIndexPath: indexPath)
         cell.accessoryType = getAccesoryType(indexPath)
-        cell.textLabel!.text = defaultMaterii[indexPath.row]
+        cell.textLabel!.text = defaultSubjects[indexPath.row]
         return cell
     }
 
@@ -71,15 +57,15 @@ class SetupViewController: UIViewController, UITableViewDelegate {
     }
     
     func checkRow(indexPath: NSIndexPath) {
-        if let index = selectedMateriiRows.indexOf(indexPath) {
-            selectedMateriiRows.removeAtIndex(index)
+        if let index = selectedSubjectRows.indexOf(indexPath) {
+            selectedSubjectRows.removeAtIndex(index)
         } else {
-            selectedMateriiRows.append(indexPath)
+            selectedSubjectRows.append(indexPath)
         }
     }
     
     func getAccesoryType(indexPath: NSIndexPath) -> UITableViewCellAccessoryType {
-        return selectedMateriiRows.contains(indexPath) ?
+        return selectedSubjectRows.contains(indexPath) ?
             UITableViewCellAccessoryType.Checkmark :
             UITableViewCellAccessoryType.None;
     }

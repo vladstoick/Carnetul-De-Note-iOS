@@ -14,12 +14,12 @@
 		72A8588A1C67A81400FD8810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858881C67A81400FD8810 /* Main.storyboard */; };
 		72A8588F1C67A81400FD8810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A8588E1C67A81400FD8810 /* Assets.xcassets */; };
 		72A858921C67A81400FD8810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858901C67A81400FD8810 /* LaunchScreen.storyboard */; };
-		72A8589D1C67A81400FD8810 /* Carnetul_de_NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A8589C1C67A81400FD8810 /* Carnetul_de_NoteTests.swift */; };
 		72A858A81C67A81400FD8810 /* Carnetul_de_NoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */; };
 		72B3E7041C67B38C001977EB /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7031C67B38C001977EB /* Absence.swift */; };
 		72B3E7061C67B74B001977EB /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7051C67B74B001977EB /* Grade.swift */; };
 		72B3E7081C67B7BA001977EB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7071C67B7BA001977EB /* Subject.swift */; };
 		72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */; };
+		72D3DE8F1C67CA4200C945C8 /* SubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */; };
 		E6A8B67E5AC5F532192B27A9 /* Pods_Carnetul_de_Note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,6 @@
 		72A858911C67A81400FD8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A858931C67A81400FD8810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A858981C67A81400FD8810 /* Carnetul de NoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carnetul de NoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72A8589C1C67A81400FD8810 /* Carnetul_de_NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carnetul_de_NoteTests.swift; sourceTree = "<group>"; };
 		72A8589E1C67A81400FD8810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A858A31C67A81400FD8810 /* Carnetul de NoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carnetul de NoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carnetul_de_NoteUITests.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		72B3E7051C67B74B001977EB /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grade.swift; path = "Carnetul de Note/Model/Grade.swift"; sourceTree = "<group>"; };
 		72B3E7071C67B7BA001977EB /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "Carnetul de Note/Model/Subject.swift"; sourceTree = "<group>"; };
 		72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupViewController.swift; path = Controllers/SetupViewController.swift; sourceTree = "<group>"; };
+		72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTests.swift; sourceTree = "<group>"; };
 		96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_NoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteUITests/Pods-Carnetul de NoteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,9 +160,9 @@
 		72A8589B1C67A81400FD8810 /* Carnetul de NoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				72A8589C1C67A81400FD8810 /* Carnetul_de_NoteTests.swift */,
 				72A8589E1C67A81400FD8810 /* Info.plist */,
 				725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */,
+				72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */,
 			);
 			path = "Carnetul de NoteTests";
 			sourceTree = "<group>";
@@ -468,8 +468,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A8589D1C67A81400FD8810 /* Carnetul_de_NoteTests.swift in Sources */,
 				725457E21C67B0AF00BC10A2 /* AbsenceTests.swift in Sources */,
+				72D3DE8F1C67CA4200C945C8 /* SubjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
