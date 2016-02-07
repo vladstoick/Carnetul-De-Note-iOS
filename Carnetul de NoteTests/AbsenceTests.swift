@@ -19,7 +19,7 @@ class AbsenceTests: XCTestCase {
         
     func testDefaultExcused() {
         let absence = Absence()
-        XCTAssert(absence.excused == false)
+        XCTAssertEqual(absence.excused, false)
     }
     
     func testUnexecusedQuery() {
@@ -32,15 +32,16 @@ class AbsenceTests: XCTestCase {
             realm.add(absence1)
             realm.add(absence2)
         }
-        var result = Absence.unexcusedAbsences()
-        XCTAssert(result.count == 2)
+        
+        var results = Absence.unexcusedAbsences()
+        XCTAssertEqual(results.count, 2)
         
         try! realm.write {
             absence1.excused = true
         }
         
-        result = Absence.unexcusedAbsences()
-        XCTAssert(result.count == 1)
+        results = Absence.unexcusedAbsences()
+        XCTAssertEqual(results.count, 1)
     }
     
 }

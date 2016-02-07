@@ -21,10 +21,25 @@ class SubjectTests: XCTestCase {
         Subject.createSubjects(subjectsName)
         let realm = try! Realm()
         let results = realm.objects(Subject)
-        XCTAssert(results.count == 4)
+        XCTAssertEqual(results.count, 4)
         for subject in results {
-            XCTAssert(subjectsName.contains(subject.name))
+            XCTAssert(subjectsName.contains(subject.name), "\(subject.name) isn't in the initial array")
         }
+    }
+    
+    func testAverage() {
+        let grades = [Grade(value: ["grade": 10]), Grade(value: ["grade": 9])]
+        let subject = Subject(value: [name: "Test", "grades": grades])
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(subject)
+            XCTAssertEqual(subject.average(), 10)
+            subject.grades.append(Grade(value: ["grade": 9]))
+            XCTAssertEqual(subject.average(), 9)
+            subject.finalGrade = 10
+            XCTAssertEqual(subject.average(), 10)
+        }
+
     }
     
 }

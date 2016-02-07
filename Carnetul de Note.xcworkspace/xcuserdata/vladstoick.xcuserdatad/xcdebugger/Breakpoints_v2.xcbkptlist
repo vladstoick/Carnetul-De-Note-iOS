@@ -2,4 +2,117 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carnetul de NoteTests/SubjectTests.swift"
+            timestampString = "476581172.794231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "testAverage()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carnetul_de_NoteTests.SubjectTests.(testAverage (Carnetul_de_NoteTests.SubjectTests) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "Carnetul de NoteTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladstoick/Desktop/Dev/Carnetul%20de%20Note/Carnetul%20de%20NoteTests/SubjectTests.swift"
+                  timestampString = "476581348.699402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "862">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carnetul_de_NoteTests.SubjectTests.(testAverage (Carnetul_de_NoteTests.SubjectTests) -&gt; () -&gt; ()).(closure #1).(implicit closure #3)"
+                  moduleName = "Carnetul de NoteTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladstoick/Desktop/Dev/Carnetul%20de%20Note/Carnetul%20de%20NoteTests/SubjectTests.swift"
+                  timestampString = "476581348.700727"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carnetul_de_NoteTests.SubjectTests.(testAverage (Carnetul_de_NoteTests.SubjectTests) -&gt; () -&gt; ()).(closure #1).(implicit closure #4)"
+                  moduleName = "Carnetul de NoteTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladstoick/Desktop/Dev/Carnetul%20de%20Note/Carnetul%20de%20NoteTests/SubjectTests.swift"
+                  timestampString = "476581348.701017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "13">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carnetul de Note/Model/Subject.swift"
+            timestampString = "476581461.794003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "average()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carnetul de Note/Model/Subject.swift"
+            timestampString = "476581472.247868"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "average()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carnetul de Note/Model/Subject.swift"
+            timestampString = "476581473.225329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "average()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
