@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C318D8A55E084111B3093817D774D95"
-               BlueprintName = "Pods-Carnetul de NoteTests"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods_Carnetul_de_NoteTests.framework">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '55A889910003EFBCADB64527'
+               BlueprintName = 'Pods-Carnetul de NoteTests'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'Pods_Carnetul_de_NoteTests.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
