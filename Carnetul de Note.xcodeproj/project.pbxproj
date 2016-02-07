@@ -14,7 +14,6 @@
 		72A8588A1C67A81400FD8810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858881C67A81400FD8810 /* Main.storyboard */; };
 		72A8588F1C67A81400FD8810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A8588E1C67A81400FD8810 /* Assets.xcassets */; };
 		72A858921C67A81400FD8810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858901C67A81400FD8810 /* LaunchScreen.storyboard */; };
-		72A858A81C67A81400FD8810 /* Carnetul_de_NoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */; };
 		72B3E7041C67B38C001977EB /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7031C67B38C001977EB /* Absence.swift */; };
 		72B3E7061C67B74B001977EB /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7051C67B74B001977EB /* Grade.swift */; };
 		72B3E7081C67B7BA001977EB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7071C67B7BA001977EB /* Subject.swift */; };
@@ -56,7 +55,6 @@
 		72A858981C67A81400FD8810 /* Carnetul de NoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carnetul de NoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A8589E1C67A81400FD8810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A858A31C67A81400FD8810 /* Carnetul de NoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carnetul de NoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carnetul_de_NoteUITests.swift; sourceTree = "<group>"; };
 		72A858A91C67A81400FD8810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72B3E7031C67B38C001977EB /* Absence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Absence.swift; path = "Carnetul de Note/Model/Absence.swift"; sourceTree = "<group>"; };
 		72B3E7051C67B74B001977EB /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grade.swift; path = "Carnetul de Note/Model/Grade.swift"; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 		72A858A61C67A81400FD8810 /* Carnetul de NoteUITests */ = {
 			isa = PBXGroup;
 			children = (
-				72A858A71C67A81400FD8810 /* Carnetul_de_NoteUITests.swift */,
 				72A858A91C67A81400FD8810 /* Info.plist */,
 			);
 			path = "Carnetul de NoteUITests";
@@ -270,6 +267,7 @@
 				TargetAttributes = {
 					72A858801C67A81400FD8810 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D4HSJHLH4Z;
 					};
 					72A858971C67A81400FD8810 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -477,7 +475,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A858A81C67A81400FD8810 /* Carnetul_de_NoteUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +599,7 @@
 			baseConfigurationReference = 42C1E91619CC1B1ECE8B9C74 /* Pods-Carnetul de Note.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Carnetul de Note/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-Note";
@@ -615,6 +613,7 @@
 			baseConfigurationReference = 65064385ACE8516FCE698DAB /* Pods-Carnetul de Note.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Carnetul de Note/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-Note";
@@ -628,6 +627,7 @@
 			baseConfigurationReference = 69172C60BC7594E2FF0FE230 /* Pods-Carnetul de NoteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Carnetul de NoteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-NoteTests";
@@ -641,6 +641,7 @@
 			baseConfigurationReference = A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Carnetul de NoteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-NoteTests";
@@ -653,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA12C217F3C795F6524D3D07 /* Pods-Carnetul de NoteUITests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Carnetul de NoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-NoteUITests";
@@ -666,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Carnetul de NoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stoicavlad.Carnetul-de-NoteUITests";

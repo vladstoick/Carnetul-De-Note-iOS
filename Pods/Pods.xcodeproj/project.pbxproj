@@ -141,7 +141,6 @@
 		872E5917940FCFE2F15C96A9F059EF85 /* RLMRealm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18DC5317E1B4F166DFC2CA60DAEC1559 /* RLMRealm.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"0.98.0\"' -D__ASSERTMACROS__"; }; };
 		8783F874196AD9E0AB4B53BB0D6AA539 /* transact_log_handler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B486F286586CD1DECCBF60223608CAD4 /* transact_log_handler.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 		8B40E9CF2D38A3F2873A8985EC5B318A /* utilities.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 934C9A7BB92D3F8AD8CCBA00F5AFA19B /* utilities.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
-		8D923B8FEEC1E53BEC5BE1A4BE9E15A1 /* cached_realm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 47D6A57BDFAD07FA55D2FFC955677083 /* cached_realm.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 		8D9572A183C0157A3F7A96C7D44A71FF /* column_linklist.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DFBAB93EC8D4A3763E2D4211FEEF20ED /* column_linklist.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 		8ED5B45A898E7377ACE9B95D7E93EB36 /* array_blob.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2E165D213780C38AA7CE29B9DE833B48 /* array_blob.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 		92346935E62D304CEF222197EB9D7819 /* link_view.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 12689F4EB5741FFFE8A9B2D5B8337BA6 /* link_view.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -233,7 +232,6 @@
 		F79167829B92E34BBABFD3F022F27EA5 /* RLMObservation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 70B522E8006F2CBE259F521833055013 /* RLMObservation.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 		F87B80482DFCBC89DE56951188573ECD /* Pods-Carnetul de NoteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CF9B1FBE36D906C981C12C2A44C194 /* Pods-Carnetul de NoteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA94DE6115F81B7EE4F5D0A8C7E29149 /* RLMObject_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC0E31DC36CBCEEFDF97AD33E38EF07 /* RLMObject_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		FAC22DA967AF09405690F6BFFE509DA4 /* external_commit_helper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7BACD08AB2BA4D149999A3DD65D34EE8 /* external_commit_helper.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 		FE60B99ABBB44539FEE51A86D6E55E99 /* RLMObjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E2285393EE333D17E1D54172F771372A /* RLMObjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF2194D2F9620D637CB678B978085562 /* shared_realm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF5F75A6A81B7123B3D429BB41DC96CA /* shared_realm.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"0.98.0\"' -D__ASSERTMACROS__"; }; };
 		FFAED6865B1E71B09278A256BB88CFBC /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8DF7DF655F7A8CC4FE54A01FB562D /* RealmConfiguration.swift */; };
@@ -1036,7 +1034,6 @@
 				0E001A88874D2EED1B303A460C1A9EF5 /* bptree.hpp in Headers */,
 				36CC7CA1EC8F03669832005D1BC77FAE /* buffer.hpp in Headers */,
 				327E29E0181426452B86DB4B0DDE1141 /* cached_realm.hpp in Headers */,
-				8D923B8FEEC1E53BEC5BE1A4BE9E15A1 /* cached_realm.hpp in Headers */,
 				DD6766C3AC6E4B6DB1E96EB867DC985A /* cached_realm_base.hpp in Headers */,
 				941F9B46E730B8877C286EFEFE10D8FB /* column.hpp in Headers */,
 				D53784142698B49663436349D24A53E6 /* column_backlink.hpp in Headers */,
@@ -1064,7 +1061,6 @@
 				3057AFF0C730550B50C67B03D1743224 /* encrypted_file_mapping.hpp in Headers */,
 				A5C75EFE8D24695393B40D9542FC6B77 /* exceptions.hpp in Headers */,
 				965C680852473C0EA08DF345ED0BE478 /* external_commit_helper.hpp in Headers */,
-				FAC22DA967AF09405690F6BFFE509DA4 /* external_commit_helper.hpp in Headers */,
 				A9E80563AE0688230D630B0093026A24 /* features.h in Headers */,
 				435D09F63877FB39BDBDC7160EC4C38A /* file.hpp in Headers */,
 				C7BBDEED96741042180D9F1B90493D6D /* file_mapper.hpp in Headers */,
