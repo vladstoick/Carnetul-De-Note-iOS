@@ -17,12 +17,9 @@ class Subject: Object {
     static func createSubjects(names: Array<String>) {
         
         let realm = try! Realm()
-        
         try! realm.write {
             for name in names {
-                let subject = Subject()
-                subject.name = name
-                realm.add(subject)
+                realm.add(Subject(value: ["name": name]))
             }
         }
     }
