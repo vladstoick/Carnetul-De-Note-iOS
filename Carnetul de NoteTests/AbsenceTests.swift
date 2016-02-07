@@ -16,12 +16,7 @@ class AbsenceTests: XCTestCase {
         super.setUp()
         Realm.Configuration.defaultConfiguration.inMemoryIdentifier = self.name
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
+        
     func testDefaultExcused() {
         let absence = Absence()
         XCTAssert(absence.excused == false)
