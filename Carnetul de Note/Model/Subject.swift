@@ -12,4 +12,5 @@ import RealmSwift
 class Subject: Object {
     dynamic var name = ""
     let grades = List<Grade>()
+    let teza = 10
 }

@@ -12,5 +12,4 @@ import RealmSwift
 class Grade: Object {
     dynamic var date = NSDate()
     dynamic var grade = 10
-    dynamic var subject: Subject?
 }

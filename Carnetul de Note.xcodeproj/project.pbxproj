@@ -11,7 +11,6 @@
 		6F54FC6534F45B14143AADC6 /* Pods_Carnetul_de_NoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */; };
 		725457E21C67B0AF00BC10A2 /* AbsenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */; };
 		72A858851C67A81400FD8810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858841C67A81400FD8810 /* AppDelegate.swift */; };
-		72A858871C67A81400FD8810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858861C67A81400FD8810 /* ViewController.swift */; };
 		72A8588A1C67A81400FD8810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858881C67A81400FD8810 /* Main.storyboard */; };
 		72A8588F1C67A81400FD8810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A8588E1C67A81400FD8810 /* Assets.xcassets */; };
 		72A858921C67A81400FD8810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858901C67A81400FD8810 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		72B3E7041C67B38C001977EB /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7031C67B38C001977EB /* Absence.swift */; };
 		72B3E7061C67B74B001977EB /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7051C67B74B001977EB /* Grade.swift */; };
 		72B3E7081C67B7BA001977EB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7071C67B7BA001977EB /* Subject.swift */; };
+		72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */; };
 		E6A8B67E5AC5F532192B27A9 /* Pods_Carnetul_de_Note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,6 @@
 		725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsenceTests.swift; sourceTree = "<group>"; };
 		72A858811C67A81400FD8810 /* Carnetul de Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carnetul de Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A858841C67A81400FD8810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72A858861C67A81400FD8810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72A858891C67A81400FD8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72A8588E1C67A81400FD8810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A858911C67A81400FD8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		72B3E7031C67B38C001977EB /* Absence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Absence.swift; path = "Carnetul de Note/Model/Absence.swift"; sourceTree = "<group>"; };
 		72B3E7051C67B74B001977EB /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grade.swift; path = "Carnetul de Note/Model/Grade.swift"; sourceTree = "<group>"; };
 		72B3E7071C67B7BA001977EB /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "Carnetul de Note/Model/Subject.swift"; sourceTree = "<group>"; };
+		72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupViewController.swift; path = Controllers/SetupViewController.swift; sourceTree = "<group>"; };
 		96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_NoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteUITests/Pods-Carnetul de NoteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,9 +146,9 @@
 		72A858831C67A81400FD8810 /* Carnetul de Note */ = {
 			isa = PBXGroup;
 			children = (
+				72D3DE8B1C67C12C00C945C8 /* Controllers */,
 				721D9D791C67AA9800ADF785 /* Model */,
 				72A858841C67A81400FD8810 /* AppDelegate.swift */,
-				72A858861C67A81400FD8810 /* ViewController.swift */,
 				72A858881C67A81400FD8810 /* Main.storyboard */,
 				72A8588E1C67A81400FD8810 /* Assets.xcassets */,
 				72A858901C67A81400FD8810 /* LaunchScreen.storyboard */,
@@ -174,6 +174,14 @@
 				72A858A91C67A81400FD8810 /* Info.plist */,
 			);
 			path = "Carnetul de NoteUITests";
+			sourceTree = "<group>";
+		};
+		72D3DE8B1C67C12C00C945C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		AE7351E588BC54A3B7E36132 /* Frameworks */ = {
@@ -451,7 +459,7 @@
 				72B3E7041C67B38C001977EB /* Absence.swift in Sources */,
 				72B3E7081C67B7BA001977EB /* Subject.swift in Sources */,
 				72B3E7061C67B74B001977EB /* Grade.swift in Sources */,
-				72A858871C67A81400FD8810 /* ViewController.swift in Sources */,
+				72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */,
 				72A858851C67A81400FD8810 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
