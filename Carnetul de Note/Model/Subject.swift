@@ -23,14 +23,26 @@ class Subject: Object {
         }
     }
     
+    static func allSubjectsAverage() -> Double {
+        let realm = try! Realm()
+        let results = realm.objects(Subject)
+        var sum = 0
+        for subject in results { sum += subject.average() }
+        return Double(sum) / Double(results.count)
+    }
+    
     func average() -> Int {
         let sum = grades.sum("grade") as Int
-        let gradesAverage : Double = Double(sum) / Double(grades.count)
-        if finalGrade == -1 {
-            return Int(round(gradesAverage))
+        if sum == 0 {
+            return finalGrade == -1 ? 10 : finalGrade
         } else {
-            let value = Double(gradesAverage * 3 + Double(finalGrade)) / 4
-            return Int(round(value))
+            let gradesAverage : Double = Double(sum) / Double(grades.count)
+            if finalGrade == -1 {
+                return Int(round(gradesAverage))
+            } else {
+                let value = Double(gradesAverage * 3 + Double(finalGrade)) / 4
+                return Int(round(value))
+            }
         }
     }
 }

@@ -39,7 +39,17 @@ class SubjectTests: XCTestCase {
             subject.finalGrade = 10
             XCTAssertEqual(subject.average(), 10)
         }
-
+        
+        let subject2 = Subject()
+        try! realm.write {
+            realm.add(subject2)
+            XCTAssertEqual(subject2.average(), 10)
+            subject2.finalGrade = 9
+            XCTAssertEqual(subject2.average(), 9)
+        }
+        
+        XCTAssertEqual(Subject.allSubjectsAverage(), 9.5)
     }
+    
     
 }
