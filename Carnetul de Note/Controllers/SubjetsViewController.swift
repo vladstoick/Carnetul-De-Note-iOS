@@ -17,10 +17,6 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
         subjects = Subject.allSubjects()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
     }
