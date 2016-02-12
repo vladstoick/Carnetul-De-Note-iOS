@@ -17,9 +17,18 @@ class SetupViewController: UIViewController, UITableViewDelegate {
         "Logică", "Psihologie", "Filozofie", "Muzică",
         "Desen", "Sport", "Religie","Economie",
         "Educație Antreprenorială"]
+    
+    override func viewWillAppear(animated: Bool) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        if userDefaults.boolForKey("didConfig") {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("mainApp")
+            self.presentViewController(vc, animated: false, completion: nil)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -28,14 +37,20 @@ class SetupViewController: UIViewController, UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "setupToMain") {
-            Subject.createSubjects(selectedSubjectRows.map({defaultSubjects[$0.row]}))
-        }
-    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return defaultSubjects.count;
+    }
+    
+    @IBAction func nextButtonPressed(sender: AnyObject) {
+        Subject.createSubjects(selectedSubjectRows.map({defaultSubjects[$0.row]}))
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setBool(true, forKey: "didConfig")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("mainApp")
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

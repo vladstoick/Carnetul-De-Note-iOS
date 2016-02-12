@@ -23,6 +23,11 @@ class Subject: Object {
         }
     }
     
+    static func allSubjects() -> Results<Subject>{
+        let realm = try! Realm()
+        return realm.objects(Subject)
+    }
+    
     static func allSubjectsAverage() -> Double {
         let realm = try! Realm()
         let results = realm.objects(Subject)

@@ -19,6 +19,7 @@
 		72B3E7081C67B7BA001977EB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7071C67B7BA001977EB /* Subject.swift */; };
 		72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */; };
 		72D3DE8F1C67CA4200C945C8 /* SubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */; };
+		72DBC4671C6E0D9000B2AE46 /* SubjetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DBC4661C6E0D9000B2AE46 /* SubjetsViewController.swift */; };
 		E6A8B67E5AC5F532192B27A9 /* Pods_Carnetul_de_Note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		72B3E7071C67B7BA001977EB /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "Carnetul de Note/Model/Subject.swift"; sourceTree = "<group>"; };
 		72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupViewController.swift; path = Controllers/SetupViewController.swift; sourceTree = "<group>"; };
 		72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTests.swift; sourceTree = "<group>"; };
+		72DBC4661C6E0D9000B2AE46 /* SubjetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubjetsViewController.swift; path = Controllers/SubjetsViewController.swift; sourceTree = "<group>"; };
 		96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_NoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89058096A6B3DD7194B3FF5 /* Pods-Carnetul de NoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3201CBADF2FDEF4A8DCF23A /* Pods-Carnetul de NoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteUITests/Pods-Carnetul de NoteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */,
+				72DBC4661C6E0D9000B2AE46 /* SubjetsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B3E7041C67B38C001977EB /* Absence.swift in Sources */,
+				72DBC4671C6E0D9000B2AE46 /* SubjetsViewController.swift in Sources */,
 				72B3E7081C67B7BA001977EB /* Subject.swift in Sources */,
 				72B3E7061C67B74B001977EB /* Grade.swift in Sources */,
 				72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */,
