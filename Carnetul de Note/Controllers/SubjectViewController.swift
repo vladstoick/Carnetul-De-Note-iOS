@@ -9,5 +9,14 @@
 import UIKit
 
 class SubjectViewController: UIViewController {
+    var subject:Subject?
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = subject!.name;
+    }
 }

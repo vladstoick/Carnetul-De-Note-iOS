@@ -20,6 +20,7 @@ class SetupViewController: UIViewController, UITableViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
+
         if userDefaults.boolForKey("didConfig") {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("mainApp")

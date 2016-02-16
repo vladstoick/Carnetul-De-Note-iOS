@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26B03B1475D527087C9D1105 /* Pods_Carnetul_de_NoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F6178F59AE8C6CEE8314DD /* Pods_Carnetul_de_NoteTests.framework */; };
 		6F54FC6534F45B14143AADC6 /* Pods_Carnetul_de_NoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E0D48CD5DD86222A52C2DD /* Pods_Carnetul_de_NoteUITests.framework */; };
+		721B48C01C73D71400C8C231 /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B48BF1C73D71400C8C231 /* SubjectCell.swift */; };
 		725457E21C67B0AF00BC10A2 /* AbsenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */; };
 		72A858851C67A81400FD8810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A858841C67A81400FD8810 /* AppDelegate.swift */; };
 		72A8588A1C67A81400FD8810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A858881C67A81400FD8810 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		72B3E7041C67B38C001977EB /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7031C67B38C001977EB /* Absence.swift */; };
 		72B3E7061C67B74B001977EB /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7051C67B74B001977EB /* Grade.swift */; };
 		72B3E7081C67B7BA001977EB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3E7071C67B7BA001977EB /* Subject.swift */; };
+		72C4DB5E1C73CED100C5967B /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4DB5D1C73CED100C5967B /* OverviewController.swift */; };
 		72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */; };
 		72D3DE8F1C67CA4200C945C8 /* SubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */; };
 		72DBC4671C6E0D9000B2AE46 /* SubjetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DBC4661C6E0D9000B2AE46 /* SubjetsViewController.swift */; };
@@ -49,6 +51,7 @@
 		65064385ACE8516FCE698DAB /* Pods-Carnetul de Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de Note/Pods-Carnetul de Note.release.xcconfig"; sourceTree = "<group>"; };
 		66F5B9F396D145FBD1DAAAE6 /* Pods_Carnetul_de_Note.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carnetul_de_Note.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69172C60BC7594E2FF0FE230 /* Pods-Carnetul de NoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carnetul de NoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carnetul de NoteTests/Pods-Carnetul de NoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		721B48BF1C73D71400C8C231 /* SubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubjectCell.swift; path = TableViewCells/SubjectCell.swift; sourceTree = "<group>"; };
 		725457E11C67B0AF00BC10A2 /* AbsenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsenceTests.swift; sourceTree = "<group>"; };
 		72A858811C67A81400FD8810 /* Carnetul de Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carnetul de Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A858841C67A81400FD8810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		72B3E7031C67B38C001977EB /* Absence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Absence.swift; path = "Carnetul de Note/Model/Absence.swift"; sourceTree = "<group>"; };
 		72B3E7051C67B74B001977EB /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grade.swift; path = "Carnetul de Note/Model/Grade.swift"; sourceTree = "<group>"; };
 		72B3E7071C67B7BA001977EB /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subject.swift; path = "Carnetul de Note/Model/Subject.swift"; sourceTree = "<group>"; };
+		72C4DB5D1C73CED100C5967B /* OverviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverviewController.swift; path = Controllers/OverviewController.swift; sourceTree = "<group>"; };
 		72D3DE8C1C67C14800C945C8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupViewController.swift; path = Controllers/SetupViewController.swift; sourceTree = "<group>"; };
 		72D3DE8E1C67CA4200C945C8 /* SubjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTests.swift; sourceTree = "<group>"; };
 		72DBC4661C6E0D9000B2AE46 /* SubjetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubjetsViewController.swift; path = Controllers/SubjetsViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		721B48BC1C73D6B900C8C231 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				721B48BF1C73D71400C8C231 /* SubjectCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		721D9D791C67AA9800ADF785 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 		72A858831C67A81400FD8810 /* Carnetul de Note */ = {
 			isa = PBXGroup;
 			children = (
+				721B48BC1C73D6B900C8C231 /* TableViewCells */,
 				72D3DE8B1C67C12C00C945C8 /* Controllers */,
 				721D9D791C67AA9800ADF785 /* Model */,
 				72A858841C67A81400FD8810 /* AppDelegate.swift */,
@@ -189,6 +202,7 @@
 				72DBC46A1C6E165A00B2AE46 /* SubjectViewController.swift */,
 				72DBC46C1C6E169C00B2AE46 /* AbsencesViewControllers.swift */,
 				72DBC46E1C6E16CA00B2AE46 /* AbsenceViewController.swift */,
+				72C4DB5D1C73CED100C5967B /* OverviewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -467,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B3E7041C67B38C001977EB /* Absence.swift in Sources */,
+				721B48C01C73D71400C8C231 /* SubjectCell.swift in Sources */,
 				72DBC4671C6E0D9000B2AE46 /* SubjetsViewController.swift in Sources */,
 				72B3E7081C67B7BA001977EB /* Subject.swift in Sources */,
 				72B3E7061C67B74B001977EB /* Grade.swift in Sources */,
@@ -474,6 +489,7 @@
 				72D3DE8D1C67C14800C945C8 /* SetupViewController.swift in Sources */,
 				72DBC46F1C6E16CA00B2AE46 /* AbsenceViewController.swift in Sources */,
 				72DBC46D1C6E169C00B2AE46 /* AbsencesViewControllers.swift in Sources */,
+				72C4DB5E1C73CED100C5967B /* OverviewController.swift in Sources */,
 				72A858851C67A81400FD8810 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,6 +28,17 @@ class Subject: Object {
         return realm.objects(Subject)
     }
     
+    func gradeListDescription() -> String {
+        var result = "";
+        for var i = 0; i < grades.count; i++ {
+            result += "\(grades[i].grade)"
+            if i != grades.count - 1 {
+                result += ", "
+            }
+        }
+        return result
+    }
+    
     static func allSubjectsAverage() -> Double {
         let realm = try! Realm()
         let results = realm.objects(Subject)

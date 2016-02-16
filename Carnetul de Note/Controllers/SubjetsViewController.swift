@@ -10,15 +10,26 @@ import UIKit
 import RealmSwift
 
 class SubjectsViewController: UIViewController, UITableViewDelegate {
-    var subjects:Results<Subject>?;
+    var subjects:Results<Subject>?
+    @IBOutlet var tableView: UITableView!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+
         subjects = Subject.allSubjects()
+        tableView.estimatedRowHeight = 85.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
+        if segue.identifier == "showSubject" {
+            let indexPath = tableView.indexPathForSelectedRow!
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            let selectedSubject = subjects![indexPath.row]
+            if let destinationVC = segue.destinationViewController as? SubjectViewController {
+                destinationVC.subject = selectedSubject
+            }
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,9 +37,19 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
-        let cell = tableView.dequeueReusableCellWithIdentifier("subjectsCell", forIndexPath: indexPath)
-        cell.textLabel!.text = subjects![indexPath.row].name
+        let cell =  tableView.dequeueReusableCellWithIdentifier("subjectsCell", forIndexPath: indexPath) as! SubjectCell
+        
+        let subject = subjects![indexPath.row]
+        cell.titleLabel!.text = subject.name
+        
+        if subject.grades.count > 0 {
+            cell.gradesLabel.hidden = false
+            cell.gradesLabel.text = subject.gradeListDescription()
+        } else {
+            cell.gradesLabel.hidden = true
+        }
+        
+        cell.averageLabel.text = "\(subject.average())"
         return cell
     }
 }
