@@ -32,6 +32,71 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
         }
     }
     
+    func presentCreateSubjectAlert() {
+        let createSubjectAlert = UIAlertController(
+            title: "Adauga materie",
+            message: "Introduceti numele materiei",
+            preferredStyle: .Alert
+        )
+        var nameTextField: UITextField!
+        
+        createSubjectAlert.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
+            nameTextField = textField
+            nameTextField.placeholder = "Numele materiei"
+            
+        }
+        
+        let createAction = UIAlertAction(
+            title: "Adauga",
+            style: .Default,
+            handler: {
+                (alert: UIAlertAction!) -> Void in
+                    Subject.createSubject(nameTextField.text!)
+                    self.tableView.reloadData()
+            }
+        )
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+
+        createSubjectAlert.addAction(createAction)
+        createSubjectAlert.addAction(cancelAction)
+        
+        self.presentViewController(createSubjectAlert, animated: true, completion: nil)
+    }
+    
+    @IBAction func addButtonSelected(sender: AnyObject) {
+        let optionMenu = UIAlertController(
+            title: "Ce vreti sa adaugati?",
+            message: nil,
+            preferredStyle: .ActionSheet
+        )
+        
+        let subjectAction = UIAlertAction(
+            title: "Materie",
+            style: .Default,
+            handler: {
+                (alert: UIAlertAction!) -> Void in
+                    self.presentCreateSubjectAlert()
+            }
+        )
+        
+        let gradeAction = UIAlertAction(
+            title: "Nota",
+            style: .Default,
+            handler: {
+                (alert: UIAlertAction!) -> Void in
+            }
+        )
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        
+        optionMenu.addAction(subjectAction)
+        optionMenu.addAction(gradeAction)
+        optionMenu.addAction(cancelAction)
+        
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return subjects!.count
     }

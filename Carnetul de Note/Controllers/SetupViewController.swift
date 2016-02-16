@@ -22,11 +22,15 @@ class SetupViewController: UIViewController, UITableViewDelegate {
         let userDefaults = NSUserDefaults.standardUserDefaults()
 
         if userDefaults.boolForKey("didConfig") {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("mainApp")
-            self.presentViewController(vc, animated: false, completion: nil)
+            navigateToMainApp(false)
         }
         
+    }
+    
+    func navigateToMainApp(animated: Bool) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("mainApp")
+        self.parentViewController!.presentViewController(vc, animated: animated, completion: nil)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,10 +42,7 @@ class SetupViewController: UIViewController, UITableViewDelegate {
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setBool(true, forKey: "didConfig")
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("mainApp")
-        self.presentViewController(vc, animated: true, completion: nil)
+        navigateToMainApp(true)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

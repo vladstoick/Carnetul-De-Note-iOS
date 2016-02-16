@@ -14,6 +14,13 @@ class Subject: Object {
     dynamic var finalGrade = -1
     let grades = List<Grade>()
     
+    static func createSubject(name: String) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(Subject(value: ["name": name]))
+        }
+    }
+    
     static func createSubjects(names: Array<String>) {
         let realm = try! Realm()
         try! realm.write {
