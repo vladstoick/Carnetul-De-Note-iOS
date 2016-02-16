@@ -79,23 +79,23 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="spatial" tableViewCell="upL-BE-pSb" id="XTY-8R-cbE">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="56.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KPg-Q4-Oz1">
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KPg-Q4-Oz1" userLabel="Horizontal Stack View">
                                             <rect key="frame" x="12" y="10" width="576" height="37"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-5E-bhx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="37"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-5E-bhx" userLabel="Vertical Stack View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="104.5" height="37"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-OQ-DRm">
-                                                            <rect key="frame" x="0.0" y="0.0" width="99" height="18"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="104.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Note: 10, 10, 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91D-Av-fNO">
-                                                            <rect key="frame" x="0.0" y="20" width="99" height="17"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <rect key="frame" x="0.0" y="19" width="104.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -131,7 +131,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Materii" id="eHF-td-7jO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HhH-Wo-Fgo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="HhH-Wo-Fgo">
                             <connections>
                                 <action selector="addButtonSelected:" destination="ieU-Vg-Whi" id="Nqz-Ip-Aq4"/>
                             </connections>
@@ -201,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="914" y="135"/>
         </scene>
-        <!--Carnetul de note-->
+        <!--General-->
         <scene sceneID="oXY-ZJ-fmJ">
             <objects>
                 <viewController id="Fmv-Bu-54Q" customClass="OverviewController" customModule="Carnetul_de_Note" customModuleProvider="target" sceneMemberID="viewController">
@@ -230,14 +230,14 @@
                             <constraint firstItem="26Z-fw-0l4" firstAttribute="top" secondItem="fg1-wm-lZ3" secondAttribute="bottom" constant="20" id="kBY-hZ-k8T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Carnetul de note" id="V2z-kw-etg"/>
+                    <navigationItem key="navigationItem" title="General" id="V2z-kw-etg"/>
                     <connections>
                         <outlet property="overallAverageLabel" destination="26Z-fw-0l4" id="P8A-sI-vJm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TV-Ox-fwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4298" y="-548"/>
+            <point key="canvasLocation" x="4183" y="-548"/>
         </scene>
         <!--Materii-->
         <scene sceneID="7RQ-a9-Ygv">
