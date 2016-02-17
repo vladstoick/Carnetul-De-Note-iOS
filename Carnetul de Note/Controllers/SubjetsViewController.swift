@@ -109,12 +109,12 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
         
         if subject.grades.count > 0 {
             cell.gradesLabel.hidden = false
-            cell.gradesLabel.text = subject.gradeListDescription()
+            cell.gradesLabel.text = subject.gradeListDescription
         } else {
             cell.gradesLabel.hidden = true
         }
         
-        cell.averageLabel.text = "\(subject.average())"
+        cell.averageLabel.text = String(subject.average)
         return cell
     }
 }

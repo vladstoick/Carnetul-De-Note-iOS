@@ -33,22 +33,33 @@ class SubjectTests: XCTestCase {
         let realm = try! Realm()
         try! realm.write {
             realm.add(subject)
-            XCTAssertEqual(subject.average(), 10)
+            XCTAssertEqual(subject.average, 10)
             subject.grades.append(Grade(value: ["grade": 9]))
-            XCTAssertEqual(subject.average(), 9)
+            XCTAssertEqual(subject.average, 9)
             subject.finalGrade = 10
-            XCTAssertEqual(subject.average(), 10)
+            XCTAssertEqual(subject.average, 10)
         }
         
         let subject2 = Subject()
         try! realm.write {
             realm.add(subject2)
-            XCTAssertEqual(subject2.average(), 10)
+            XCTAssertEqual(subject2.average, 10)
             subject2.finalGrade = 9
-            XCTAssertEqual(subject2.average(), 9)
+            XCTAssertEqual(subject2.average, 9)
         }
         
         XCTAssertEqual(Subject.allSubjectsAverage(), 9.5)
+    }
+    
+    func testGradeListDescription() {
+        let realm = try! Realm()
+        let grades = [Grade(value: ["grade": 10]), Grade(value: ["grade": 9])]
+        let subject = Subject(value: [name: "Test", "grades": grades])
+        try! realm.write {
+            realm.add(subject)
+            XCTAssertEqual(subject.gradeListDescription, "10, 9")
+        }
+
     }
     
     

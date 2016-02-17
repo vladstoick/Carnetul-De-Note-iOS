@@ -9,7 +9,7 @@
 import UIKit
 
 class SetupViewController: UIViewController, UITableViewDelegate {
-    var selectedSubjectRows = Array<NSIndexPath>()
+    var selectedSubjectRows = Set<NSIndexPath>()
     let defaultSubjects = [
         "Română", "Franceză", "Engleză", "Germană",
         "Matematică", "Fizică", "Biologie", "Chimie",
@@ -46,8 +46,8 @@ class SetupViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Note:  Be sure to replace the argument to dequeueReusableCellWithIdentifier with the actual identifier string!
-        let cell = tableView.dequeueReusableCellWithIdentifier("setupCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(
+            "setupCell", forIndexPath: indexPath)
         cell.accessoryType = getAccesoryType(indexPath)
         cell.textLabel!.text = defaultSubjects[indexPath.row]
         return cell
@@ -60,17 +60,15 @@ class SetupViewController: UIViewController, UITableViewDelegate {
     }
     
     func checkRow(indexPath: NSIndexPath) {
-        if let index = selectedSubjectRows.indexOf(indexPath) {
-            selectedSubjectRows.removeAtIndex(index)
+        if selectedSubjectRows.contains(indexPath) {
+            selectedSubjectRows.remove(indexPath)
         } else {
-            selectedSubjectRows.append(indexPath)
+            selectedSubjectRows.insert(indexPath)
         }
     }
     
     func getAccesoryType(indexPath: NSIndexPath) -> UITableViewCellAccessoryType {
-        return selectedSubjectRows.contains(indexPath) ?
-            UITableViewCellAccessoryType.Checkmark :
-            UITableViewCellAccessoryType.None;
+        return selectedSubjectRows.contains(indexPath) ? .Checkmark : .None
     }
     
 }
