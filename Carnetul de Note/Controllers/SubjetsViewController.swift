@@ -28,7 +28,7 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         let realm = try! Realm()
         token = realm.addNotificationBlock { notification, realm in
-            self.subjects = Subject.allSubjects();
+//            self.subjects = Subject.allSubjects();
             self.tableView.reloadData()
         }
     }

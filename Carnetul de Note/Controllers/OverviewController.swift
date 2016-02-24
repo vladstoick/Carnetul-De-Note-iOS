@@ -19,9 +19,9 @@ class OverviewController: UIViewController {
     }
     
     func updateUI(){
-        overallAverageLabel.text = NSNumberFormatter.localizedStringFromNumber(
-            Subject.allSubjectsAverage(),
-            numberStyle: NSNumberFormatterStyle.DecimalStyle
-        )
+        overallAverageLabel.text = NSString(
+            format: "%.02f",
+            Subject.allSubjectsAverage()
+        ) as String
     }
 }
