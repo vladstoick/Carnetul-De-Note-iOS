@@ -131,9 +131,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Materii" id="eHF-td-7jO">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="HhH-Wo-Fgo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HhH-Wo-Fgo">
                             <connections>
-                                <action selector="addButtonSelected:" destination="ieU-Vg-Whi" id="Nqz-Ip-Aq4"/>
+                                <action selector="addButtonClicked:" destination="ieU-Vg-Whi" id="cne-Jo-QSz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -158,6 +158,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="fU7-lS-TQl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mzq-m9-7au">
+                            <connections>
+                                <action selector="addButtonClicked:" destination="tE3-P0-4ao" id="xfP-y7-eLM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbR-uL-HnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

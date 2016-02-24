@@ -164,6 +164,7 @@
 		72A858831C67A81400FD8810 /* Carnetul de Note */ = {
 			isa = PBXGroup;
 			children = (
+				72DBD35C1C75306300C77117 /* Views */,
 				721B48BC1C73D6B900C8C231 /* TableViewCells */,
 				72D3DE8B1C67C12C00C945C8 /* Controllers */,
 				721D9D791C67AA9800ADF785 /* Model */,
@@ -205,6 +206,13 @@
 				72C4DB5D1C73CED100C5967B /* OverviewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		72DBD35C1C75306300C77117 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		AE7351E588BC54A3B7E36132 /* Frameworks */ = {

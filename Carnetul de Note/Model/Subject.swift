@@ -41,6 +41,15 @@ class Subject: Object {
         }
     }
     
+    func addGrade(grade: Int) {
+        let realm = try! Realm()
+        try! realm.write {
+            let newGrade = Grade()
+            newGrade.grade = grade
+            grades.append(newGrade)
+        }
+    }
+    
     static func createSubject(name: String) {
         let realm = try! Realm()
         try! realm.write {
