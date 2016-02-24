@@ -15,6 +15,7 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
     }()
     
     @IBOutlet var tableView: UITableView!
+    var token:NotificationToken?
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -22,6 +23,14 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
         subjects = Subject.allSubjects()
         tableView.estimatedRowHeight = 85.0
         tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    override func viewDidLoad() {
+        let realm = try! Realm()
+        token = realm.addNotificationBlock { notification, realm in
+            self.subjects = Subject.allSubjects();
+            self.tableView.reloadData()
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -56,7 +65,6 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
             handler: {
                 (alert: UIAlertAction!) -> Void in
                 Subject.createSubject(nameTextField.text!)
-                self.tableView.reloadData()
             }
         )
         
