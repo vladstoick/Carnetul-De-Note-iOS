@@ -10,12 +10,11 @@ import UIKit
 import RealmSwift
 
 class SubjectsViewController: UIViewController, UITableViewDelegate {
-    var subjects:Results<Subject> = {
-        return Subject.allSubjects();
-    }()
+    var subjects:Results<Subject>!
     
     @IBOutlet var tableView: UITableView!
-    var token:NotificationToken?
+
+    var token:NotificationToken!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,7 +27,7 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         let realm = try! Realm()
         token = realm.addNotificationBlock { notification, realm in
-//            self.subjects = Subject.allSubjects();
+            self.subjects = Subject.allSubjects();
             self.tableView.reloadData()
         }
     }
@@ -87,17 +86,8 @@ class SubjectsViewController: UIViewController, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCellWithIdentifier("subjectsCell", forIndexPath: indexPath) as! SubjectCell
         
-        let subject = subjects[indexPath.row]
-        cell.titleLabel.text = subject.name
+        cell.updateCell(subjects[indexPath.row])
         
-        if subject.grades.count > 0 {
-            cell.gradesLabel.hidden = false
-            cell.gradesLabel.text = subject.gradeListDescription
-        } else {
-            cell.gradesLabel.hidden = true
-        }
-        
-        cell.averageLabel.text = String(subject.average)
         return cell
     }
 }

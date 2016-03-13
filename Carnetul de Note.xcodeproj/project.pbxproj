@@ -139,6 +139,13 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		727F218D1C9588B800652FAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		72A858781C67A81400FD8810 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +171,7 @@
 		72A858831C67A81400FD8810 /* Carnetul de Note */ = {
 			isa = PBXGroup;
 			children = (
+				727F218D1C9588B800652FAF /* Helpers */,
 				72DBD35C1C75306300C77117 /* Views */,
 				721B48BC1C73D6B900C8C231 /* TableViewCells */,
 				72D3DE8B1C67C12C00C945C8 /* Controllers */,

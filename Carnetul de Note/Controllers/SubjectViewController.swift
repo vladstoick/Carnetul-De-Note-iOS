@@ -8,12 +8,23 @@
 
 import UIKit
 
-class SubjectViewController: UIViewController {
-    var subject:Subject?
+class SubjectViewController: UIViewController, UITableViewDelegate {
+    var subject:Subject!
+    
+    @IBOutlet weak var finalGradeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = subject!.name
+        self.title = subject.name
+        setFinalGradeLabel()
+    }
+    
+    func setFinalGradeLabel() {
+        if (subject.finalGrade != -1) {
+            self.finalGradeLabel.text = "Teza: \(subject.finalGrade)"
+        } else {
+            self.finalGradeLabel.text = "Teza: -"
+        }
     }
     
     func createGradeAlertTextChanged(textField: UITextField) {
@@ -36,11 +47,16 @@ class SubjectViewController: UIViewController {
         
         var gradeTextField: UITextField!
         
-        createGradeAlert.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
-            gradeTextField = textField
-            gradeTextField.placeholder = "Nota"
-            gradeTextField.keyboardType = .NumberPad
-            gradeTextField.addTarget(self, action: "createGradeAlertTextChanged:", forControlEvents: UIControlEvents.EditingChanged)
+        createGradeAlert.addTextFieldWithConfigurationHandler {
+            (textField: UITextField) -> Void in
+                gradeTextField = textField
+                gradeTextField.placeholder = "Nota"
+                gradeTextField.keyboardType = .NumberPad
+                gradeTextField.addTarget(
+                    self,
+                    action: "createGradeAlertTextChanged:",
+                    forControlEvents: UIControlEvents.EditingChanged
+            )
         }
         
         let createAction = UIAlertAction(
@@ -49,11 +65,11 @@ class SubjectViewController: UIViewController {
             handler: {
                 (alert: UIAlertAction!) -> Void in
                 let grade = Int(gradeTextField!.text!)
-                self.subject?.addGrade(grade!)
+                self.subject.addGrade(grade!)
             }
         )
         
-        createAction.enabled = false;
+        createAction.enabled = false
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         
@@ -66,4 +82,25 @@ class SubjectViewController: UIViewController {
     @IBAction func addButtonClicked(sender: AnyObject) {
         showAddGradeAlert()
     }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30;
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Note"
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return subject.grades.count;
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell =  tableView.dequeueReusableCellWithIdentifier("gradeCell", forIndexPath: indexPath)
+        
+        cell.textLabel!.text = String(subject.grades[indexPath.row].grade);
+        
+        return cell
+    }
+    
 }

@@ -13,4 +13,16 @@ class SubjectCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var averageLabel: UILabel!
 
+    func updateCell(subject: Subject) {
+        titleLabel.text = subject.name;
+        
+        averageLabel.text = "\(subject.average)";
+        
+        if subject.grades.count > 0 {
+            gradesLabel.hidden = false
+            gradesLabel.text = subject.gradeListDescription
+        } else {
+            gradesLabel.hidden = true
+        }
+    }
 }
